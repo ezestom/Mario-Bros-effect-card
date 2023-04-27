@@ -1,0 +1,34 @@
+.sliders{
+   display: grid;
+   place-items: center;
+   max-width: 100vw;
+}
+
+.slider{
+   aspect-ratio: 10 / 16;
+   width: 300px;
+   position: relative;
+   display: flex;
+   overflow-x: scroll;
+   scroll-snap-type: x mandatory;
+   scrollbar-width: none; /* Oculta la barra de scroll */
+   -webkit-overflow-scrolling: touch; /* Habilita el scrolling suave en iOS */
+   cursor: grab; /* Cambia el cursor del mouse para indicar que se puede arrastrar */
+   user-select: none; /* Evita que el texto se seleccione mientras se arrastra */
+   touch-action: pan-y; /* Permite el scrolling vertical en dispositivos táctiles */
+   scroll-behavior: smooth; /* Añade un efecto suave al movimiento del slider */
+}
+.slider::-webkit-scrollbar {
+   display: none; /* Oculta la barra de scroll en Chrome, Safari, etc. */
+}
+.slider:active {
+   cursor: grabbing; /* Cambia el cursor del mouse mientras se está arrastrando */
+}
+.slider img{
+   width: 100%;
+   left: 0;
+   position: sticky;
+   object-fit: cover;
+   border-radius: 5px;
+   scroll-snap-align: center;
+}
