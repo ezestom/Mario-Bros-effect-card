@@ -2,13 +2,14 @@ body {
 	background-color: #f2f2f2;
 	padding: 5%;
 }
-article {
+article{
 	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-div > article > img {
+
+div > img {
 	border-radius: 8px;
 	width: 100%;
 	height: 100%;

@@ -5,19 +5,19 @@
    width: 100vw;
 
 }
-article {
+.card1 {
    position: relative;
    width: 300px;
    transition: all .3s ease;
 }
-article img:first-child{
+.card1 img:first-child{
    box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
    border-radius: 4px;
    object-fit: cover;
    width: 100%;
    filter: drop-shadow(0 0 1em rgba(0, 30, 255, 0.5)) brightness(100%);
 }
-article img:last-child{
+.card1 img:last-child{
    position: absolute;
    width: 150px;
    bottom: 0;
@@ -31,7 +31,7 @@ article img:last-child{
    filter: drop-shadow(0 0 1em rgba(0, 30, 255, 0.5)) brightness(100%);
    
 }  
-article:hover{
+.card1:hover{
    transform: 
       perspective(250px)
       rotateX(10deg)
@@ -41,7 +41,7 @@ article:hover{
 
 }
 
-article::before{
+.card1::before{
    content: '';
    position: absolute;
    height: 100%;
@@ -55,10 +55,10 @@ article::before{
    opacity: 0;
    transition: all .3s ease;
 }
-article:hover::before{
+.card1:hover::before{
    opacity: 1;
 }
-article:hover img:last-child{
+.card1:hover img:last-child{
    opacity: 1;
    transform: translateY(0%);
 }
